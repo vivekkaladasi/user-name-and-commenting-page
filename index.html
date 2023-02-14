@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Animated Login Form</title>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #3498DB;
+      }
+      .form-container {
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        box-shadow: 0 0 10px #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+      }
+      .form-container:hover {
+        box-shadow: 0 0 20px #ccc;
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+      h1 {
+        margin-bottom: 50px;
+        font-weight: bold;
+        color: #3498DB;
+      }
+      input[type="text"],
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        outline: none;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #3498DB;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+      }
+      input[type="submit"]:hover {
+        background-color: white;
+        color: #3498DB;
+        box-shadow: 0 0 10px #3498DB;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>slate</h1>
+      <form>
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+          <label for="comment">comment:</label>
+          <input type="text" id="text" name="text" required>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
+
+
+
